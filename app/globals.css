@@ -15,3 +15,17 @@ a:focus-visible, button:focus-visible { outline: 3px solid #D4B7FF; outline-offs
 .form-field { @apply mt-2 w-full rounded-xl border border-white/15 bg-ink px-4 py-3.5 text-base text-white outline-none transition placeholder:text-slate-400 focus:border-blue focus:ring-4 focus:ring-blue-500/25; }
 .error-field { @apply border-red-400 focus:border-red-500 focus:ring-red-100; }
 .skip-link { @apply sr-only fixed left-4 top-4 z-50 rounded-lg bg-white px-4 py-3 font-bold text-ink focus:not-sr-only; }
+
+/* Presentation-only overrides for the native Flodesk form. */
+.flodesk-theme [data-ff-el="root"].ff-6a8c9952357cefe573694750 .ff-6a8c9952357cefe573694750__container { max-width: none !important; background: transparent !important; }
+.flodesk-theme [data-ff-el="root"].ff-6a8c9952357cefe573694750 .ff-6a8c9952357cefe573694750__form { padding: 0 !important; color: #fff !important; }
+.flodesk-theme [data-ff-el="root"].ff-6a8c9952357cefe573694750 .ff-6a8c9952357cefe573694750__title,
+.flodesk-theme [data-ff-el="root"].ff-6a8c9952357cefe573694750 .ff-6a8c9952357cefe573694750__subtitle { display: none !important; }
+.flodesk-theme [data-ff-el="root"].ff-6a8c9952357cefe573694750 .ff-6a8c9952357cefe573694750__field { margin-bottom: 18px !important; }
+.flodesk-theme [data-ff-el="root"].ff-6a8c9952357cefe573694750 .ff-6a8c9952357cefe573694750__control { height: 54px !important; border: 1px solid rgba(255,255,255,.15) !important; border-radius: 12px !important; background: #14031D !important; color: white !important; font-family: Arial, Helvetica, sans-serif !important; font-size: 16px !important; }
+.flodesk-theme [data-ff-el="root"].ff-6a8c9952357cefe573694750 .ff-6a8c9952357cefe573694750__label { color: white !important; font-family: Arial, Helvetica, sans-serif !important; font-size: 14px !important; font-weight: 700 !important; }
+.flodesk-theme [data-ff-el="root"].ff-6a8c9952357cefe573694750 .ff-6a8c9952357cefe573694750__control:focus { border-color: #9146FF !important; box-shadow: 0 0 0 4px rgba(145,70,255,.25) !important; }
+.flodesk-theme [data-ff-el="root"].ff-6a8c9952357cefe573694750 .ff-6a8c9952357cefe573694750__button { min-height: 56px !important; border: 0 !important; border-radius: 12px !important; background: #7C2AE8 !important; color: #fff !important; font-family: Arial, Helvetica, sans-serif !important; font-size: 16px !important; font-weight: 700 !important; }
+.flodesk-theme [data-ff-el="root"].ff-6a8c9952357cefe573694750 .ff-6a8c9952357cefe573694750__button:hover { background: #641CCB !important; }
+.flodesk-theme [data-ff-el="root"].ff-6a8c9952357cefe573694750 .ff-6a8c9952357cefe573694750__success-message,
+.flodesk-theme [data-ff-el="root"].ff-6a8c9952357cefe573694750 .fd-form-error { color: #E9D9FF !important; font-family: Arial, Helvetica, sans-serif !important; }

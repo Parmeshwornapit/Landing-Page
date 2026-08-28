@@ -23,6 +23,13 @@ a:focus-visible, button:focus-visible { outline: 3px solid #D4B7FF; outline-offs
 .consultation-panel { background: radial-gradient(circle at 4% 12%, rgba(145,70,255,.17), transparent 32%), linear-gradient(135deg, #2B0D3D, #1A0626 72%); }
 .consultation-check { @apply flex items-start gap-3 text-sm leading-6 text-lilac; }
 .consultation-check::before { content: "✓"; @apply mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-blue text-xs font-black text-white; }
+.faq-item { transition: border-color .2s ease, background .2s ease; }
+.faq-item[open] { border-color: rgba(145,70,255,.75); background: rgba(43,13,61,.95); }
+.faq-marker { @apply flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-blue/15 text-xl font-normal text-blue-200; transition: transform .2s ease; }
+.faq-item[open] .faq-marker { transform: rotate(45deg); }
+.flodesk-loading { @apply flex min-h-40 items-center justify-center gap-3 rounded-xl border border-white/10 bg-ink/30 px-5 text-center text-sm text-lilac; }
+.flodesk-spinner { width: 18px; height: 18px; border: 2px solid rgba(212,183,255,.3); border-top-color: #D4B7FF; border-radius: 999px; animation: spin .8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
 
 /* Presentation-only overrides for the native Flodesk form. */
 .flodesk-theme [data-ff-el="root"].ff-6a8c9952357cefe573694750 .ff-6a8c9952357cefe573694750__container { max-width: none !important; background: transparent !important; }

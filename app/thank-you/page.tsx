@@ -25,8 +25,8 @@ export default function ThankYou() {
           <div className="mx-auto max-w-3xl">
             <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-blue text-3xl font-bold text-white shadow-xl shadow-blue-950/50 ring-8 ring-blue-500/10" aria-hidden>✓</div>
             <p className="mt-8 text-xs font-extrabold uppercase tracking-[.2em] text-blue-300">Your request is in</p>
-            <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-6xl">{name ? `Thanks, ${name}!` : "Your consultation is booked."}</h1>
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-lilac sm:text-xl">You&apos;re one step closer to a customized AI-powered marketing plan for your business.</p>
+            <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-white sm:text-6xl">{name ? `Thanks, ${name}!` : "Your consultation request is in."}</h1>
+            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-lilac sm:text-xl">Choose a convenient time on WhatsApp, then you&apos;re one step closer to a customized AI-powered marketing plan for your business.</p>
           </div>
 
           <div className="mt-12 grid items-start gap-8 text-left lg:grid-cols-[.9fr_1.1fr] lg:gap-12">
@@ -42,9 +42,9 @@ export default function ThankYou() {
                 ))}
               </div>
               <div className="mt-9 rounded-2xl border border-green-400/30 bg-green-950/25 p-5">
-                <p className="font-bold text-white">Want to introduce your business now?</p>
-                <p className="mt-1 text-sm leading-6 text-lilac">Send a quick WhatsApp message before the call.</p>
-                <a href="https://wa.me/9779861676300?text=Hi%20Parmeshwor%2C%20I%20just%20booked%20a%20free%20consultation." target="_blank" rel="noreferrer" className="mt-4 inline-flex min-h-12 items-center justify-center rounded-full bg-[#25D366] px-6 font-bold text-white shadow-lg shadow-green-950/40 transition hover:-translate-y-0.5 hover:bg-[#1EBE5D]">Chat on WhatsApp <span aria-hidden className="ml-2">↗</span></a>
+                <p className="font-bold text-white">Choose a time for your consultation</p>
+                <p className="mt-1 text-sm leading-6 text-lilac">Send a WhatsApp message to arrange a time that works for you.</p>
+                <a href="https://wa.me/9779861676300?text=Hi%20Parmeshwor%2C%20I%20just%20requested%20a%20free%20consultation.%20I%27d%20like%20to%20schedule%20a%20time." target="_blank" rel="noreferrer" className="mt-4 inline-flex min-h-12 items-center justify-center rounded-full bg-[#25D366] px-6 font-bold text-white shadow-lg shadow-green-950/40 transition hover:-translate-y-0.5 hover:bg-[#1EBE5D]">Choose a time on WhatsApp <span aria-hidden className="ml-2">↗</span></a>
               </div>
             </div>
 
